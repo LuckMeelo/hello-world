@@ -21,4 +21,4 @@ message("CMAKE SOURCE DIR: ${CMAKE_SOURCE_DIR}")
 message("CMAKE INCLUDE PATH: ${CMAKE_INCLUDE_PATH}")
 message("====")
 
-add_executable(${BINARY_NAME} main.cpp)
+add_executable(${BINARY_NAME} src/main.cpp)
