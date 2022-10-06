@@ -2,13 +2,12 @@
 ** EPITECH PROJECT, 2022
 ** hello-world
 ** File description:
-** main
+** print_hello_world
 */
 
 #include "../include/hello.hpp"
 
-int main(void)
+void display_hello_world(void)
 {
-    display_hello_world();
-    return (0);
+    std::cout << "Hello world!" << std::endl;
 }

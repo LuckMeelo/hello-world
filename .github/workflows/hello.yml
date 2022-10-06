@@ -11,4 +11,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: build
         run: |
+          chmod +x ./install_criterion.sh
+          ./install_criterion.sh
           ./build.sh
+      - name: unit_tests
+        run: |
+          ./build/bin/test

@@ -2,6 +2,7 @@ project(hello-world)
 cmake_minimum_required(VERSION 3.0)
 
 set(BINARY_NAME hello-world)
+set(TEST_DIR tests)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -21,4 +22,5 @@ message("CMAKE SOURCE DIR: ${CMAKE_SOURCE_DIR}")
 message("CMAKE INCLUDE PATH: ${CMAKE_INCLUDE_PATH}")
 message("====")
 
-add_executable(${BINARY_NAME} src/main.cpp)
+add_subdirectory(tests)
+add_executable(${BINARY_NAME} src/main.cpp src/display_hello_world.cpp)
