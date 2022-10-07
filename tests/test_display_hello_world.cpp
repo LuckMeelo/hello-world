@@ -13,5 +13,5 @@ Test(HelloWorld, test_display_hello_world)
 {
     OSRedirector redr(std::cout);
     display_hello_world();
-    cr_assert_eq(redr.getContent(), "Hello world!");
+    cr_assert_eq(redr.getContent(), "Hello world!\n");
 }
